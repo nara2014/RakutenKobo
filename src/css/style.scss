@@ -1,0 +1,49 @@
+body {
+  margin: 10px;
+}
+#search_btn {
+  width: 100%;
+}
+#search_title {
+  margin-top: 3px;
+}
+.margin_2 {
+  margin-bottom: 2px;
+}
+
+// トップ
+.jumbotron {
+  background-image: url("../resource/lena-rose-ydHrpfgJNPo-unsplash.jpg");
+  background-size: cover;
+  background-position: center 60%;
+  #top {
+    font-family: "Play", sans-serif;
+    font-size: 50px;
+  }
+  .top-bgc {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+// タイトル一覧
+.listTitles {
+  background-color: aliceblue;
+}
+
+// 結果一覧
+.res-books {
+  margin: 5px;
+  .res-book {
+    display: inline-block;
+    margin: 2px;
+    .res-title {
+      background-color: skyblue;
+    }
+    .res-author {
+      background-color: white;
+    }
+    .res-date {
+      background-color: #e0ecf8;
+    }
+  }
+}

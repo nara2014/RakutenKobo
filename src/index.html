@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search Comics</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- トップ画像 -->
+    <div class="jumbotron" img="./res">
+        <p class="text-left">Photo by Lena Rose on Unsplash</p>
+        <div>&nbsp;</div>
+        <h1 id="top" class="text-center top-bgc">Latest Comics for Yours</h1>
+        <h5 class="text-center top-bgc">Let's find some latest comics only for yours.</h5>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <p class="text-right">this service via Rakuten kobo API.</p>
+    </div>
+    <!-- 検索ボタン -->
+    <div>
+        <button id="search_btn" class="btn btn-primary" onclick="searchAll()">S E A R C H</button>
+        <div class="margin_2"></div>
+    </div>
+    <!-- タイトル入力欄 -->
+    <div class="input-group mb-3">
+        <input type="text" class="form-control inputTitle" placeholder="Input comic title ...">
+        <div class="input-group-append">
+          <button class="btn btn-outline-primary" type="button" onclick="addTitle()">Add</button>
+          <button class="btn btn-outline-danger" type="button" onclick="rmvTitle()">Remove</button>
+        </div>
+    </div>
+    <div class="margin_2"></div>
+    <!-- チェックボックス制御 -->
+    <div class="btn-group btn-group-sm mb-2">
+        <button class="btn btn-outline-info" onclick="checkAll('checked')">All Check</button>
+        <button class="btn btn-outline-info" onclick="checkAll('')"       >All Clear</button>
+    </div>
+    <!-- 保存ボタン -->
+    <div class="btn-group btn-group-sm mb-2">
+        <button class="btn btn-info" onclick="saveComics()">SAVE COMICS TITLE</button>
+    </div>
+
+    <!-- 検索タイトル一覧 -->
+    <div class="listTitles">
+    </div>
+
+    <!-- 結果一覧 -->
+    <div class="res-wrap">
+    </div>
+
+    <script src="./js/define.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
