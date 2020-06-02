@@ -8,7 +8,7 @@ const app_id = encodeURI('1060170081702903408');
 // status 429 対策 wait[ms]
 const WAIT_API = 250;
 // 表示巻数 1:最新のみ
-const SHOW_VOL = 3;
+const SHOW_VOL = 2;
 // !new badge
 const NEW_BADGE = "New!";
 
